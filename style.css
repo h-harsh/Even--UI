@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root{
+    --primary-color:#3B82F6;
+    --secondary-color:#6B7280;
+    --white-color:#E5E7EB;
+    --grey: rgb(206, 206, 206)
+}
+/* colors */
+.red-bg{
+    background: red;
+}
+.yellow-bg{
+    background: yellow;
+}
+.blue-bg{
+    background: blueviolet;
+}
+.red-cl{
+    color: red;
+}
+.yellow-cl{
+    color: yellow;
+}
+.blue-cl{
+    color: blueviolet;
+}
+.red-light{
+    background: rgb(255, 155, 155);
+}
+.yellow-light{
+    background: rgb(255, 255, 173);
+}
+.blue-light{
+    background: rgb(156, 156, 236);
+}
+
+.pd-1{
+    padding: 1rem;
+}
+.pd-2{
+    padding: 2rem;
+}
+
+.sm {
+    height: 3rem;
+}
+.md{
+    height: 5rem;
+}
+.lg{
+    height: 7rem;
+}
+
+/* Avatar */
+.avatar{
+    border-radius: 50%;
+}
+
+/* Avator badge */
+.avatar-badge{
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.badge{
+    border-radius: 50%;
+    border: 0.2rem solid white;
+    position: absolute;
+}
+.badge-sm{
+    height: 0.5rem;
+    width: 0.5rem;
+    border: 0.1rem solid white;
+    bottom: 0.5rem;
+    left: 2.5rem;
+}
+.badge-md{
+    height: 0.8rem;
+    width: 0.8rem;
+    border: 0.2rem solid white;
+    bottom: 1rem;
+    left: 4.5rem;
+}
+.badge-lg{
+    height: 1rem;
+    width: 1rem;
+    border: 0.2rem solid white;
+    bottom: 1rem;
+    left: 6rem;
+}
+/* Icon badge */
+.icon-div{
+    position: relative;
+    
+}
+.icon-count{
+border-radius: 50%;
+}
+.icon-count-sm{
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.1rem 0.3rem;
+    position: absolute;
+}
+.icon-count-md{
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 0.1rem 0.3rem;
+    position: absolute;
+}
+.icon-count-lg{
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 0.1rem 0.3rem;
+    position: absolute;
+}
+
+/* Alerts */
+.alert{
+    padding: 1rem 3rem;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* button */
+.btn{
+    padding: 0.8rem 1.2rem;
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.btn-primary{
+    background-color: var(--primary-color);
+}
+.btn-secondary{
+    background-color: var(--secondary-color);
+}
+.btn-link1{
+    color: var(--primary-color);
+}
+.btn-link2{
+    color: var(--secondary-color)
+}
+.btn-link1:hover{
+    text-decoration: underline;
+}
+.btn-link2:hover{
+    text-decoration: underline;
+}
+.btn:hover{
+    opacity: 1;
+}
+.cta{
+    background: var(--primary-color);
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+/* Card vertical */
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 15rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.card:hover{
+    box-shadow: 5px 5px 5px 5px gray;
+    transition: 1s;
+}
+.price{
+    display: flex;
+}
+.price p{
+    margin-right: 0.5rem;
+    padding-bottom: 0.5rem ;
+}
+.card h3{
+    padding-bottom: 0.5rem ;
+}
+.prod-badge{
+    background: var(--primary-color);
+    color: white;
+    padding: 0.1rem 0.5rem;
+    position: absolute;
+    top: 2rem;
+    border-radius:  0 0.7rem 0 0 ;
+}
+.prod-btns{
+    display: flex;
+    justify-content: space-between;
+}
+.price-orig{
+    text-decoration: line-through;
+}
+/* Card horizontal */
+.card-horiz{
+    position: relative;
+    display: inline-flex; 
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.card-horiz:hover{
+    box-shadow: 5px 5px 5px 5px gray;
+    transition: 1s;
+}
+.prod-img-horiz{
+    height: 19rem;
+}
+.card-sub-div-horiz{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-card{
+    border: 1px solid black;
+    padding: 1rem;
+    max-width: 20rem;
+}
+.text-card-tagline{
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+.text-card-horiz{
+    max-width: 80%;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.overlay-text-card{
+    position: relative;
+    display: inline-block;
+}
+.overlay-img{
+    height: 20rem;
+    width: 20rem;
+}
+.overlay-text-card:hover{
+    opacity: 0.6;
+}
+.overlay-text{
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+.overlay-text-card:hover .overlay-text{
+    opacity: 1;
+}
+
+/* Image */
+.resp{
+    width: 20rem;
+}
+.resp-img{
+    max-width: 100%;
+}
+.resp-img-round{
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+/* input box */
+.input-box{
+    border: 1px solid black ;
+    display: flex;
+    /* flex-direction: column  ; */
+    padding: 1.5rem;
+    justify-content: space-evenly;
+}
+input{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Lists */
+.list-notif{
+    list-style: none;
+    display: inline-flex;
+    flex-direction: column;
+}
+.list-item{
+    border: 1px solid black;
+    padding: 1rem;
+    background: var(--grey);
+    color: white;
+    cursor: pointer;
+}
+.list-item:hover{
+    font-weight: bold;
+}
+
+/* Nav bar */
+.nav-bar{
+    background: var(--secondary-color);
+    color: var(--white-color);
+    font-weight: bold;
+    height: 8.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav-list{
+   display: flex; 
+   list-style: none;
+}
+.nav-icon{
+    width: 3.5rem;
+}
+.nav-items{
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+}
+.nav-items:hover{
+    font-weight: bolder;
+}
+
+/* Grid */
+.grid-2-item-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid-item{
+    background: wheat;
+    border: 1px solid black;
+}
+.grid-3-item-row{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.grid-3-item{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+.sub-grid{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
