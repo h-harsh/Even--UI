@@ -1,41 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 :root{
     --primary-color:#3B82F6;
     --secondary-color:#6B7280;
     --white-color:#E5E7EB;
-    --grey: rgb(206, 206, 206)
+    --grey: #808080
 }
 /* colors */
 .red-bg{
-    background: red;
+    background: #ff0000;
 }
 .yellow-bg{
-    background: yellow;
+    background: #FFFF00;
 }
 .blue-bg{
-    background: blueviolet;
+    background:  #8a2be2;
 }
 .red-cl{
-    color: red;
+    color: #ff0000;
 }
 .yellow-cl{
-    color: yellow;
+    color: #FFFF00;
 }
 .blue-cl{
-    color: blueviolet;
+    color:  #8a2be2;
 }
 .red-light{
-    background: rgb(255, 155, 155);
+    background: #FF9B9B;
 }
 .yellow-light{
-    background: rgb(255, 255, 173);
+    background: #FFFFAD;
 }
 .blue-light{
-    background: rgb(156, 156, 236);
+    background: #9C9CEC;
 }
 
 .pd-1{
@@ -135,6 +137,7 @@ border-radius: 50%;
     font-size: 1.3rem;
     cursor: pointer;
     opacity: 0.8;
+    border: 0.5px solid black;
 }
 .btn-primary{
     background-color: var(--primary-color);
@@ -168,12 +171,12 @@ border-radius: 50%;
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 15rem;
+    width: 15rem;
     border: 1px solid gray;
     border-radius: 5px;
 }
 .card:hover{
-    box-shadow: 5px 5px 5px 5px gray;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
     transition: 1s;
 }
 .price{
@@ -207,9 +210,10 @@ border-radius: 50%;
     display: inline-flex; 
     border: 1px solid black;
     border-radius: 5px;
+    width: 30rem;
 }
 .card-horiz:hover{
-    box-shadow: 5px 5px 5px 5px gray;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
     transition: 1s;
 }
 .prod-img-horiz{
@@ -346,4 +350,9 @@ input{
 .sub-grid{
     display: grid;
     grid-template-columns: 1fr 4fr;
+}
+
+
+.text-ut{
+    padding: 1rem;
 }
