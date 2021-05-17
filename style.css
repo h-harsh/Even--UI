@@ -14,7 +14,7 @@
 }
 /* colors */
 .red-bg {
-  background: #ff0000;
+  background: #f19090;
 }
 .yellow-bg {
   background: #ffff00;
@@ -50,12 +50,15 @@
 
 .sm {
   height: 3rem;
+  font-size: 3rem;
 }
 .md {
   height: 5rem;
+  font-size: 5rem;
 }
 .lg {
   height: 7rem;
+  font-size: 7rem;
 }
 
 /* Avatar */
@@ -105,7 +108,7 @@
 .icon-count-sm {
   font-weight: 600;
   font-size: 1.2rem;
-  padding: 0.1rem 0.3rem;
+  padding: 0.1rem 0.5rem;
   position: absolute;
 }
 .icon-count-md {
@@ -125,7 +128,16 @@
 .alert {
   padding: 1rem 3rem;
   display: inline-block;
-  border-radius: 5px;
+  width: 18rem;
+}
+.al-red{
+    border-left: 1rem solid rgb(202, 48, 48);
+}
+.al-yellow{
+    border-left: 1rem solid rgb(194, 171, 45);
+}
+.al-blue{
+    border-left: 1rem solid rgb(33, 36, 121);
 }
 
 /* button */
@@ -143,14 +155,14 @@
   background-color: var(--primary-color);
 }
 .btn-secondary {
-  background-color: var(--secondary-color);
+  background-color: rgb(59, 216, 255);
 }
 .btn-link1 {
   color: var(--primary-color);
   background-color: white;
 }
 .btn-link2 {
-  color: var(--secondary-color);
+  color: rgb(59, 216, 255);
   background-color: white;
 }
 .btn-link1:hover {
@@ -248,6 +260,13 @@
   background-color: var(--primary-color);
   color: var(--og-white);
   transition: 0.5s;
+}
+.btn2-disabled{
+    cursor: not-allowed;
+}
+.btn2-disabled:hover{
+    background-color: whitesmoke;
+    color: gray;
 }
 
 /* Card vertical */
@@ -501,6 +520,8 @@ nav {
   width: 100%;
   height: 5rem;
   border: 0.5px solid rgb(235, 235, 235) !important ;
+  box-shadow: 3px 5px 5px #aaaaaa;
+
 }
 li {
   list-style: none;
@@ -515,6 +536,7 @@ li {
   /* font-family: "Roboto", sans-serif; */
   font-size: 1.3rem;
   font-weight: bold;
+  
   font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 }
 .nav-itm-text:hover{
