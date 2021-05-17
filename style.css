@@ -372,6 +372,20 @@
     border: 0.5px solid black;
     background-color: white;
 }
+/* category card */
+.card-category{
+    font-family: "Montserrat", sans-serif;
+    height: 43rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* box-shadow: ; */
+}
+.cat-img{
+    height: 32rem;
+    width: 28rem;
+}
 
 
 .text-card {
