@@ -8,12 +8,12 @@
 .carbon {
     width: 100%;
   }
-:root{
+/* :root{
     --primary-color:#3B82F6;
     --secondary-color:#6B7280;
     --white-color:#E5E7EB;
     --grey: rgb(206, 206, 206)
-}
+} */
   iframe {
     width: 85% !important;
     min-height: 40vh ;
