@@ -455,16 +455,28 @@
 }
 
 /* input box */
-.input-box {
-  border: 1px solid black;
-  display: flex;
-  /* flex-direction: column  ; */
-  padding: 1.5rem;
-  justify-content: space-evenly;
-}
 input {
   padding: 0.5rem;
   font-size: 1.2rem;
+}
+form {
+  display: inline-block;
+}
+.field {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+label {
+  order: -1;
+  padding-left: 5px;
+  transition: all 0.3s ease-in;
+  transform: translateY(20px);
+  pointer-events: none;
+  color: rgb(92, 92, 92);
+}
+input:focus + label {
+  transform: translateY(-2px);
 }
 
 /* Lists */
@@ -476,13 +488,14 @@ input {
 .list-item {
   border: 1px solid black;
   padding: 1rem;
-  background: var(--grey);
-  color: white;
+  background: whitesmoke;
+  color: black;
   cursor: pointer;
 }
 .list-item:hover {
   font-weight: bold;
 }
+
 
 /* Nav bar */
 .nav-bar {
