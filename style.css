@@ -467,7 +467,7 @@ form {
   display: flex;
   flex-direction: column;
 }
-label {
+.label {
   order: -1;
   padding-left: 5px;
   transition: all 0.3s ease-in;
@@ -475,7 +475,7 @@ label {
   pointer-events: none;
   color: rgb(92, 92, 92);
 }
-input:focus + label {
+.input:focus + .label {
   transform: translateY(-2px);
 }
 
