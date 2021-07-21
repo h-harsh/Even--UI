@@ -268,7 +268,7 @@
     background-color: whitesmoke;
     color: gray;
 }
-.fa-heart:before {
+.icon-btn .fa-heart:before {
   content: "\f004";
   background: whitesmoke;
   padding: 0.5rem;
