@@ -253,8 +253,8 @@
   font-size: 2.3rem;
 }
 .icon-btn:hover {
-  font-size: 2.1rem;
-  transition: all 0.5s;
+  /* font-size: 2.1rem; */
+  transition: all 1s;
 }
 .nm-btn2:hover {
   background-color: var(--primary-color);
@@ -277,11 +277,10 @@
   width: 17rem;
   border: none;
   border-radius: 5px;
-}
-.card:hover {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
   transition: 0.5s;
 }
+
 .brand-name {
   margin-top: 0.5rem;
   font-size: 0.8rem;
@@ -585,9 +584,9 @@ nav {
     padding: 1rem;
     margin: 0;
   }
-  .topnav.responsive .topnav {
+  /* .topnav.responsive .topnav {
     background-color: brown;
-  } 
+  }  */
   .topnav.responsive .nav-itm span{
     display: inline-block;
   }
