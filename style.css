@@ -290,16 +290,16 @@
 }
 .oth-btn-container {
   position: absolute;
-  top: 10rem;
-  left: 3rem;
-  display: none;
+  top: 0;
+  right: 0;
+  /* display: none; */
 }
 .except-btn:hover .oth-btn-container {
   display: inline-block;
 }
-.prod-img-dib:hover {
+/* .prod-img-dib:hover {
   opacity: 0.7;
-}
+} */
 
 .prod-img {
   width: 17rem;
