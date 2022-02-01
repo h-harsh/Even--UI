@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/docs.css" />
+    <script
+      src="https://kit.fontawesome.com/9f366bbf8a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Even UI | Cards</title>
+    
+    <script src="./index.js"></script>
+  </head>
+
+  <body>
+    <nav class="topnav" id="myTopnav">
+      <p class="nav-itm nav-itm-text active "><a href="../index.html">Home</a> </p>
+      <p class="nav-itm right "> <span>Github</span> <i class="fab fa-github"></i></p>
+      <p class="nav-itm right "> <span>Repository</span> <i class="fas fa-code-branch"></i></i></p>
+      <p class="nav-itm control right" onclick="myFunction()" > <i class="fa fa-bars"></i></p>
+  </nav>
+    </nav>
+    <main>
+      <div class="sidebar">
+        <ul>
+          <a href="/components/1avatar.html">
+            <li class="sidebar-item">Avatars</li>
+          </a>
+          <a href="/components/2badge.html">
+            <li class="sidebar-item">Badge</li>
+          </a>
+          <a href="/components/3alerts.html">
+            <li class="sidebar-item">Alert</li>
+          </a>
+          <a href="/components/4button.html">
+            <li class="sidebar-item">Buttons</li>
+          </a>
+          <a href="/components/5cards.html">
+            <li class="sidebar-item">Cards</li>
+          </a>
+          <a href="/components/6image.html">
+            <li class="sidebar-item">Image</li>
+          </a>
+          <a href="/components/7input.html">
+            <li class="sidebar-item">Input Fields</li>
+          </a>
+          <a href="/components/8lists.html">
+            <li class="sidebar-item">Lists</li>
+          </a>
+          <a href="/components/9navbar.html">
+            <li class="sidebar-item">Nav Bar</li>
+          </a>
+          <a href="/components/10grid.html">
+            <li class="sidebar-item">Grid</li>
+          </a>
+          <a href="/components/11textut.html">
+            <li class="sidebar-item">Text Utilities</li>
+          </a>
+        </ul>
+      </div>
+      <div class="components">
+        <div class="sub-comp-div">
+          <h2 class="div-ch">Card</h2>
+          <div class="code div-ch sub-cont">
+            <div class="card">
+              <div class="except-btn">
+                <span class="prod-badge">Trending</span>
+                <div class="prod-img-dib">
+                  <img
+                    class="prod-img"
+                    src="/images/m-cc201-dustypink-dennis-lingo-original-imafueutmgyvtfdr.jpeg"
+                    alt=""
+                  />
+                </div>
+                <p class="brand-name">Brand nam</p>
+                <h3 class="product-name">Product name</h3>
+                <div class="price">
+                  <p>₹ 999</p>
+                  <p class="price-orig">₹ 1599</p>
+                  <p>(45% off)</p>
+                </div>
+                <div class="oth-btn-container">
+                  <button class="icon-btn"><i class="far fa-heart"></i></button>
+                </div>
+              </div>
+              <div class="prod-btns">
+                <div class="sp-button-container">
+                  <button class="sp-button"><span> Add To Cart</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carbon div-ch">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=paraiso-dark&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=63px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522except-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cspan%2520class%253D%2522prod-badge%2522%253ETrending%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522prod-img-dib%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cimg%2520class%253D%2522prod-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Fm-cc201-dustypink-dennis-lingo-original-imafueutmgyvtfdr.jpeg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522brand-name%2522%253EBrand%2520nam%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522product-name%2522%253EProduct%2520name%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cp%253E%25E2%2582%25B9%2520999%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522price-orig%2522%253E%25E2%2582%25B9%25201599%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%2845%2525%2520off%29%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522oth-btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-btn%2522%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-binoculars%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522prod-btns%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522sp-button-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522sp-button%2522%253E%253Cspan%253E%2520Add%2520To%2520Cart%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+  
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+          </div>
+
+          <h2 class="div-ch">Horizontal card</h2>
+          <div class="code sub-cont div-ch">
+            <div class="horiz-card">
+              <div class="horiz-prod">
+                <div class="horiz-prod-sub">
+                  <div>
+                    <img
+                      class="horiz-prod-img"
+                      src="/images/m-cc201-dustypink-dennis-lingo-original-imafueutmgyvtfdr.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="horiz-prod-sub-in">
+                    <p class="brand-name">Brand nam</p>
+                    <h3 class="product-name">Product name</h3>
+                    <p class="prod-desc">Hello ye bhi altu faltu product hai</p>
+                    <div class="horiz-prod-btns">
+                      <button class="btn btn-link1 horiz-">+</button>
+                      <p class="horiz-prod-qty">qty</p>
+                      <button class="btn btn-link1 horiz-">-</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="horiz-prod-price">
+                  <div class="horiz-prod-price1">₹ 999</div>
+
+                  <div class="horiz-prod-price2">
+                    <p class="price-orig">₹ 1599</p>
+                    <p>(45% off)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons-horizontal">
+                <button class="nm-btn2 horiz">Remove</button>
+                <button class="nm-btn2 horiz">
+                  <i class="far fa-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="carbon div-ch">
+            <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=paraiso-dark&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=63px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cdiv%2520class%253D%2522horiz-card%2522%253E%250A%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522horiz-prod%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522horiz-prod-sub%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522horiz-prod-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Fm-cc201-dustypink-dennis-lingo-original-imafueutmgyvtfdr.jpeg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522horiz-prod-sub-in%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522brand-name%2522%253EBrand%2520nam%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522product-name%2522%253EProduct%2520name%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522prod-desc%2522%253EHello%2520ye%2520bhi%2520altu%2520faltu%2520product%2520hai%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522horiz-prod-btns%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-link1%2520horiz-%2522%253E%252B%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522horiz-prod-qty%2522%253Eqty%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-link1%2520horiz-%2522%253E-%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522horiz-prod-price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522horiz-prod-price1%2522%253E%25E2%2582%25B9%2520999%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522horiz-prod-price2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522price-orig%2522%253E%25E2%2582%25B9%25201599%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%2845%2525%2520off%29%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522buttons-horizontal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522nm-btn2%2520horiz%2522%253ERemove%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522nm-btn2%2520horiz%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+          </div>
+
+          <h2 class="div-ch">Category Card</h2>
+          <div class="code sub-cont div-ch">
+            <div class="card-category">
+                <img class="cat-img" src="https://images.unsplash.com/photo-1513001900722-370f803f498d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="">
+                <h2>The category Name</h2>
+                <p>A line very short abot category only</p>
+                <button class="btn btn-primary">Browse More</button>
+            </div>
+          </div>
+          <div class="carbon div-ch">
+            <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=paraiso-dark&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=63px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cdiv%2520class%253D%2522card-category%2522%253E%250A%2520%2520%2520%2520%2509%253Cimg%2520class%253D%2522cat-img%2522%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1513001900722-370f803f498d%253Fixid%253DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%2526ixlib%253Drb-1.2.1%2526auto%253Dformat%2526fit%253Dcrop%2526w%253D334%2526q%253D80%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ch2%253EThe%2520category%2520Name%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cp%253EA%2520line%2520very%2520short%2520abot%2520category%2520only%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EBrowse%2520More%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+          </div>
+
+          <h2 class="div-ch">Text card</h2>
+          <div class="code sub-cont div-ch">
+            <div class="text-card">
+              <h3>Title of Card</h3>
+              <p class="text-card-tagline">Any tagline or thing you like</p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+                architecto unde esse repellat delectus possimus incidunt
+                ratione, doloremque facere quas reprehenderit. Laborum quas modi
+                officia, perferendis itaque numquam corporis vel.
+              </p>
+            </div>
+          </div>
+          <div class="carbon div-ch">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=paraiso-dark&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=63px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cdiv%2520class%253D%2522text-card%2522%253E%250A%2509%2509%253Ch3%253ETitle%2520of%2520Card%253C%252Fh3%253E%250A%2509%2509%253Cp%2520class%253D%2522text-card-tagline%2522%253EAny%2520tagline%2520or%2520thing%2520you%2520like%253C%252Fp%253E%250A%2509%2509%253Cp%253ELorem%2520ipsum%2520dolor%252C%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Sed%2520architecto%2520%2509%2509unde%2520esse%2520repellat%2520delectus%2520possimus%2520incidunt%2520ratione%252C%2520doloremque%2520facere%2520%2509%2509%2509quas%2520reprehenderit.%2520Laborum%2520quas%2520modi%2520officia%252C%2520perferendis%2520itaque%2520numquam%2520%2509%2509%2509corporis%2520vel.%253C%252Fp%253E%250A%2509%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <h2 class="div-ch">Horizontal Text card</h2>
+          <div class="code sub-cont div-ch">
+            <div class="text-card-horiz">
+              <h3>Title of Card</h3>
+              <p class="text-card-tagline">Any tagline or thing you like</p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+                architecto unde esse repellat delectus possimus incidunt
+                ratione, doloremque facere quas reprehenderit. Laborum quas modi
+                officia, perferendis itaque numquam corporis vel.
+              </p>
+            </div>
+          </div>
+          <div class="carbon div-ch">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=paraiso-dark&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=63px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cdiv%2520class%253D%2522text-card-horiz%2522%253E%250A%2509%2509%253Ch3%253ETitle%2520of%2520Card%253C%252Fh3%253E%250A%2509%2509%253Cp%2520class%253D%2522text-card-tagline%2522%253EAny%2520tagline%2520or%2520thing%2520you%2520like%253C%252Fp%253E%250A%2509%2509%253Cp%253ELorem%2520ipsum%2520dolor%252C%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Sed%2520architecto%2520%2509%2509%2509unde%2520esse%2520repellat%2520delectus%2520possimus%2520incidunt%2520ratione%252C%2520doloremque%2520facere%2520%2509%2509%2509%2520quas%2520reprehenderit.%2520Laborum%2520quas%2520modi%2520officia%252C%2520perferendis%2520itaque%2520%2509%2509%2509%2509%2509numquam%2520corporis%2520vel.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2509%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <h2 class="div-ch">Text Overlay</h2>
+          <div class="code sub-cont div-ch">
+            <div class="overlay-text-card">
+              <img
+                class="overlay-img"
+                src="/images/The-Best-Harvey-Specter-Quotes.jpg"
+                alt=""
+              />
+              <h3 class="overlay-text">
+                Winners don't make excuses, when the other side gets to play
+              </h3>
+            </div>
+          </div>
+          <div class="carbon div-ch">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=paraiso-dark&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=63px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cdiv%2520class%253D%2522overlay-text-card%2522%253E%250A%2509%2509%253Cimg%2520class%253D%2522overlay-img%2522%2520src%253D%2522%252Fimages%252FThe-Best-Harvey-Specter-Quotes.jpg%2522%2520alt%253D%2522%2522%253E%250A%2509%2509%253Ch3%2520class%253D%2522overlay-text%2522%253EWinners%2520don%27t%2520make%2520excuses%252C%2520when%2520the%2520other%2520side%2520gets%2520to%2520play%2520%253C%252Fh3%253E%250A%2509%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/docs.css">
+    <title>Even UI | Grid</title>
+    <script src="https://kit.fontawesome.com/9f366bbf8a.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <nav class="topnav" id="myTopnav">
+        <p class="nav-itm nav-itm-text active "><a href="../index.html">Home</a> </p>
+        <p class="nav-itm right "> <span>Github</span> <i class="fab fa-github"></i></p>
+        <p class="nav-itm right "> <span>Repository</span> <i class="fas fa-code-branch"></i></i></p>
+        <p class="nav-itm control right" onclick="myFunction()" > <i class="fa fa-bars"></i></p>
+    </nav>div>
+    </nav>
+    <main>
+        <div class="sidebar">
+            <ul>
+                <a href="/components/1avatar.html">
+                    <li class="sidebar-item">Avatars</li>
+                </a>
+                <a href="/components/2badge.html">
+                    <li class="sidebar-item">Badge</li>
+                </a>
+                <a href="/components/3alerts.html">
+                    <li class="sidebar-item">Alert</li>
+                </a>
+                <a href="/components/4button.html">
+                    <li class="sidebar-item">Buttons</li>
+                </a>
+                <a href="/components/5cards.html">
+                    <li class="sidebar-item">Cards</li>
+                </a>
+                <a href="/components/6image.html">
+                    <li class="sidebar-item"> Image</li>
+                </a>
+                <a href="/components/7input.html">
+                    <li class="sidebar-item">Input Fields</li>
+                </a>
+                <a href="/components/8lists.html">
+                    <li class="sidebar-item">Lists</li>
+                </a>
+                <a href="/components/9navbar.html">
+                    <li class="sidebar-item">Nav Bar</li>
+                </a>
+                <a href="/components/10grid.html">
+                    <li class="sidebar-item">Grid</li>
+                </a>
+                <a href="/components/11textut.html">
+                    <li class="sidebar-item">Text Utilities</li>
+                </a>
+            </ul>
+        </div>
+        <div class="components">
+            <div class="sub-comp-div">
+                <h2 class="div-ch">Grid</h2>
+                <h2>@2-column Grid</h2>
+                <div class="div-ch">
+                    <div class="grid-2-item-col">
+                        <div class="grid-item pd-2">Column-1</div>
+                        <div class="grid-item pd-2">Column-2</div>
+                    </div>
+                </div>
+                <div class="carbon">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=paraiso-dark&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=63px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cdiv%2520class%253D%2522grid-2-item-col%2522%253E%250A%2509%2509%253Cdiv%2520class%253D%2522grid-item%2520pd-2%2522%253EColumn-1%253C%252Fdiv%253E%250A%2509%2509%253Cdiv%2520class%253D%2522grid-item%2520pd-2%2522%253EColumn-2%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <h2>@3-Rows Grid</h2>
+                <div class="div-ch">
+                    <div class="grid-3-item-row">
+                        <div class="grid-item pd-2">Row-1</div>
+                        <div class="grid-item pd-2">Row-2</div>
+                        <div class="grid-item pd-2">Row-3</div>
+                    </div>
+                </div>
+                <div class="carbon">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=paraiso-dark&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=63px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cdiv%2520class%253D%2522grid-3-item-row%2522%253E%250A%2509%2509%253Cdiv%2520class%253D%2522grid-item%2520pd-2%2522%253ERow-1%253C%252Fdiv%253E%250A%2509%2509%253Cdiv%2520class%253D%2522grid-item%2520pd-2%2522%253ERow-2%253C%252Fdiv%253E%250A%2509%2509%253Cdiv%2520class%253D%2522grid-item%2520pd-2%2522%253ERow-3%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+
+                <h2>@2-Rows-2Column Grid</h2>
+                <div class="div-ch ">
+                    <div class="grid-3-item">
+                        <div class="grid-item pd-2">Column-1</div>
+                        <div class="sub-grid">
+                            <div class="grid-item pd-2">Column-2 Row-1</div>
+                            <div class="grid-item pd-2">column-2 Row-2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carbon">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=paraiso-dark&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=63px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cdiv%2520class%253D%2522grid-3-item%2522%253E%250A%2509%2509%253Cdiv%2520class%253D%2522grid-item%2520pd-2%2522%253EColumn-1%253C%252Fdiv%253E%250A%2509%2509%253Cdiv%2520class%253D%2522sub-grid%2522%253E%250A%2509%2509%2509%253Cdiv%2520class%253D%2522grid-item%2520pd-2%2522%253EColumn-2%2520Row-1%253C%252Fdiv%253E%250A%2509%2509%2509%253Cdiv%2520class%253D%2522grid-item%2520pd-2%2522%253Ecolumn-2%2520Row-2%253C%252Fdiv%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

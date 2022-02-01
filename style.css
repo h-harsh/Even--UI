@@ -1,0 +1,627 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+:root {
+  --primary-color: black;
+  --secondary-color: #adefd1ff;
+  --white-color: #e5e7eb;
+  --og-white: white;
+  --offWhite: whitesmoke;
+}
+/* colors */
+.red-bg {
+  background: #f19090;
+}
+.yellow-bg {
+  background: #ffff00;
+}
+.blue-bg {
+  background: #8a2be2;
+}
+.red-cl {
+  color: #ff0000;
+}
+.yellow-cl {
+  color: #ffff00;
+}
+.blue-cl {
+  color: #8a2be2;
+}
+.red-light {
+  background: #ff9b9b;
+}
+.yellow-light {
+  background: #ffffad;
+}
+.blue-light {
+  background: #9c9cec;
+}
+
+.pd-1 {
+  padding: 1rem;
+}
+.pd-2 {
+  padding: 2rem;
+}
+
+.sm {
+  height: 3rem;
+  font-size: 3rem;
+}
+.md {
+  height: 5rem;
+  font-size: 5rem;
+}
+.lg {
+  height: 7rem;
+  font-size: 7rem;
+}
+
+/* Avatar */
+.avatar {
+  border-radius: 50%;
+}
+
+/* Avator badge */
+.avatar-badge {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.badge {
+  border-radius: 50%;
+  border: 0.2rem solid white;
+  position: absolute;
+}
+.badge-sm {
+  height: 0.5rem;
+  width: 0.5rem;
+  border: 0.1rem solid white;
+  bottom: 0.5rem;
+  left: 2.5rem;
+}
+.badge-md {
+  height: 0.8rem;
+  width: 0.8rem;
+  border: 0.2rem solid white;
+  bottom: 1rem;
+  left: 4.5rem;
+}
+.badge-lg {
+  height: 1rem;
+  width: 1rem;
+  border: 0.2rem solid white;
+  bottom: 1rem;
+  left: 6rem;
+}
+/* Icon badge */
+.icon-div {
+  position: relative;
+}
+.icon-count {
+  border-radius: 50%;
+}
+.icon-count-sm {
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0.1rem 0.5rem;
+  position: absolute;
+}
+.icon-count-md {
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding: 0.1rem 0.3rem;
+  position: absolute;
+}
+.icon-count-lg {
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding: 0.1rem 0.3rem;
+  position: absolute;
+}
+
+/* Alerts */
+.alert {
+  padding: 1rem 3rem;
+  display: inline-block;
+  width: 18rem;
+}
+.al-red{
+    border-left: 1rem solid rgb(202, 48, 48);
+}
+.al-yellow{
+    border-left: 1rem solid rgb(194, 171, 45);
+}
+.al-blue{
+    border-left: 1rem solid rgb(33, 36, 121);
+}
+
+/* button */
+.btn {
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.4rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1.3rem;
+  cursor: pointer;
+  opacity: 0.8;
+  border: 0 solid black;
+}
+.btn-primary {
+  background-color: var(--primary-color);
+}
+.btn-secondary {
+  background-color: rgb(59, 216, 255);
+}
+.btn-link1 {
+  color: var(--primary-color);
+  background-color: white;
+}
+.btn-link2 {
+  color: rgb(59, 216, 255);
+  background-color: white;
+}
+.btn-link1:hover {
+  background-color: whitesmoke;
+}
+.btn-link2:hover {
+  background-color: whitesmoke;
+}
+.btn:hover {
+  opacity: 1;
+}
+.btn-disabled {
+  cursor: not-allowed;
+  color: black;
+}
+
+.cta {
+  background: var(--primary-color);
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+/* new vutton 2 */
+/* .button{
+    border: 1px solid black;
+    background-color: white;
+    padding: 0.6rem 1.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: var(--primary-color);
+    color: white;
+    transition: 0.3s;
+} */
+
+/* Cart animation button */
+.sp-button,
+.nm-btn2 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: var(--og-white);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.6rem 1.8rem;
+  width: 17rem;
+  /* transition: all 0.5s; */
+  cursor: pointer;
+}
+
+.sp-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.sp-button:hover {
+  background-color: var(--primary-color);
+  color: var(--og-white);
+}
+
+.sp-button span:after {
+  font-family: "FontAwesome";
+  content: "\f290";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  /* transition: 0.5s; */
+}
+
+.sp-button:hover span {
+  padding-right: 25px;
+  background-color: ;
+}
+
+.sp-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.icon-btn {
+  padding: 0.6rem;
+  font-size: 1.5rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 2.3rem;
+}
+.icon-btn:hover {
+  /* font-size: 2.1rem; */
+  transition: all 1s;
+}
+.nm-btn2:hover {
+  background-color: var(--primary-color);
+  color: var(--og-white);
+  transition: 0.5s;
+}
+.btn2-disabled{
+    cursor: not-allowed;
+}
+.btn2-disabled:hover{
+    background-color: whitesmoke;
+    color: gray;
+}
+.icon-btn .fa-heart:before {
+  content: "\f004";
+  background: whitesmoke;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+/* Card vertical */
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 17rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+
+.brand-name {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+.product-name {
+  margin-top: 0.3rem;
+}
+.oth-btn-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* display: none; */
+}
+.except-btn:hover .oth-btn-container {
+  display: inline-block;
+}
+/* .prod-img-dib:hover {
+  opacity: 0.7;
+} */
+
+.prod-img {
+  width: 17rem;
+  height: 19rem;
+}
+.price {
+  display: flex;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+.price p {
+  margin-right: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.card h3 {
+  padding-bottom: 0.5rem;
+}
+.prod-badge {
+  background: orange;
+  color: white;
+  padding: 0.1rem 0.5rem;
+  position: absolute;
+  top: 2rem;
+  border-radius: 0 0.7rem 0 0;
+}
+.prod-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.price-orig {
+  text-decoration: line-through;
+}
+/* Card horizontal */
+.horiz-card {
+  border: 0.5px solid rgb(221, 221, 221);
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  width: 35rem;
+}
+.horiz-prod {
+  border-bottom: 1px solid rgb(221, 221, 221);
+  display: flex;
+  justify-content: space-between;
+}
+.horiz-prod-sub {
+  display: flex;
+}
+.horiz-prod-sub-in {
+  padding-left: 0.5rem;
+}
+.horiz-prod-img {
+  height: 12rem;
+}
+.prod-desc {
+  margin-top: 0.5rem;
+}
+.horiz-prod-btns {
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  width: 10rem;
+  justify-content: space-evenly;
+}
+.horiz-prod-qty {
+  padding: 0.8rem 1.2rem;
+}
+.horiz-prod-price {
+  display: flex;
+  flex-direction: column;
+}
+.horiz-prod-price1 {
+  text-align: right;
+}
+
+.horiz-prod-price2 {
+  display: flex;
+}
+.horiz {
+  font-size: 1rem;
+}
+.horiz- {
+  background-color: whitesmoke;
+}
+.horiz-:hover {
+  border: 0.5px solid black;
+  background-color: white;
+}
+/* category card */
+.card-category {
+  font-family: "Montserrat", sans-serif;
+  height: 43rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* box-shadow: ; */
+}
+.cat-img {
+  height: 32rem;
+  width: 28rem;
+}
+
+.text-card {
+  border: 1px solid black;
+  padding: 1rem;
+  max-width: 20rem;
+}
+.text-card-tagline {
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+.text-card-horiz {
+  max-width: 80%;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.overlay-text-card {
+  position: relative;
+  display: inline-block;
+}
+.overlay-img {
+  height: 20rem;
+  width: 20rem;
+}
+.overlay-text-card:hover {
+  opacity: 0.6;
+}
+.overlay-text {
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+.overlay-text-card:hover .overlay-text {
+  opacity: 1;
+}
+
+/* Image */
+.resp {
+  width: 20rem;
+}
+.resp-img {
+  max-width: 100%;
+}
+.resp-img-round {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+/* input box */
+input {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+form {
+  display: inline-block;
+}
+.field {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  order: -1;
+  padding-left: 5px;
+  transition: all 0.3s ease-in;
+  transform: translateY(20px);
+  pointer-events: none;
+  color: rgb(92, 92, 92);
+}
+.input:focus + .label {
+  transform: translateY(-2px);
+}
+
+/* Lists */
+.list-notif {
+  list-style: none;
+  display: inline-flex;
+  flex-direction: column;
+}
+.list-item {
+  border: 1px solid black;
+  padding: 1rem;
+  background: whitesmoke;
+  color: black;
+  cursor: pointer;
+}
+.list-item:hover {
+  font-weight: bold;
+}
+
+
+/* Nav bar */
+
+
+/* nav 2 */
+nav {
+  width: 100%;
+  height: 5rem;
+  border: 0.5px solid rgb(235, 235, 235) !important ;
+  box-shadow: 3px 5px 5px #aaaaaa;
+  background-color: whitesmoke;
+  z-index: 12;
+
+}
+.nav-itm {
+  padding: 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  display: inline-block;
+}
+.nav-itm span{
+  display: none;
+}
+.nav-itm-text{
+  float: left;
+}
+.right{
+  float: right;
+}
+.search-thing{
+    background-color: white;
+    border:none;
+}
+.nav-icons{
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    margin-left: 3rem;
+}
+.topnav .control{
+  display: none;
+}
+
+.search-bx{
+  display: inline-block;
+  padding: 1rem;
+  
+}
+@media screen and (max-width: 1092px) {
+  /* .topnav p:not(:first-child) {display: none;} */
+  .topnav p{
+    display: none;
+  }
+  .topnav .active{
+    display: inline-block !important;
+  }
+  .topnav p.control {
+    float: right;
+    display: block;
+  }
+  .topnav .search-thing, .search-bx {
+    display: none;
+  }
+  .topnav .fasos {
+    display: none;
+  }
+  
+  
+  
+}
+@media screen and (max-width: 1092px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive p.control {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+  .topnav.responsive .nav-itm {
+    float: none;
+    display: block;
+    text-align: left;
+    background-color:whitesmoke;
+    border: 1px solid white;
+    padding: 1rem;
+    margin: 0;
+  }
+  /* .topnav.responsive .topnav {
+    background-color: brown;
+  }  */
+  .topnav.responsive .nav-itm span{
+    display: inline-block;
+  }
+}
+
+
+
+/* Grid */
+.grid-2-item-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid-item {
+  background: wheat;
+  border: 1px solid black;
+}
+.grid-3-item-row {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.grid-3-item {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+.sub-grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.text-ut {
+  padding: 1rem;
+}
